@@ -1,11 +1,11 @@
+import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
-import React from "react";
-import { MantineProvider, ColorSchemeScript } from "@mantine/core";
+import { Provider } from "jotai";
 import { theme } from "../theme";
 
 export const metadata = {
-  title: "Mantine Next.js template",
-  description: "I am using Mantine with Next.js!",
+  title: "PixelAIde",
+  description: "PixelAIde is an assistant for frontend developers.",
 };
 
 export default function RootLayout({ children }: { children: any }) {
@@ -20,7 +20,9 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <Provider>
+          <MantineProvider theme={theme}>{children}</MantineProvider>
+        </Provider>
       </body>
     </html>
   );

@@ -9,16 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai-sdk/google": "^1.0.4",
     "@mantine/core": "7.14.3",
     "@mantine/hooks": "7.14.3",
+    "@mantine/spotlight": "^7.14.3",
+    "@tabler/icons-react": "^3.23.0",
+    "@upstash/ratelimit": "^2.0.5",
+    "@vercel/kv": "^3.0.0",
+    "ai": "^4.0.9",
+    "jotai": "^2.10.3",
     "next": "15.0.1",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.6.1",
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "20.14.8",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.4",
     "postcss": "^8.4.38",
