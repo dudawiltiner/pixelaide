@@ -1,11 +1,5 @@
-import Chat from "../src/components/Chat/Chat";
-import { HeaderSearch } from "../src/components/Header/HeaderSearch";
+import HomePage from "../src/screens/HomePage/HomePage";
 
-export default function HomePage() {
-  return (
-    <>
-      <HeaderSearch />
-      <Chat />
-    </>
-  );
+export default function Home() {
+  return <HomePage />;
 }
