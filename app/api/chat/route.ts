@@ -4,7 +4,7 @@ import { kv } from "@vercel/kv";
 import { convertToCoreMessages, streamText } from "ai";
 import { NextRequest } from "next/server";
 
-export const MAX_DURATION_IN_SECONDS = 360;
+const MAX_DURATION_IN_SECONDS = 360;
 
 const ratelimit = new Ratelimit({
   redis: kv,
